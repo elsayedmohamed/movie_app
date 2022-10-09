@@ -1,6 +1,5 @@
-import 'genres_model.dart';
-import '../../domain/entites/genres.dart';
 import '../../domain/entites/movie_detail.dart';
+import 'genres_model.dart';
 
 class MovieDetailModel extends MovieDetail {
   const MovieDetailModel({

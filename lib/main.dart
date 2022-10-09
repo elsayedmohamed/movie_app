@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'core/utils/app_strings.dart';
+
 import 'core/services/service_locator.dart';
+import 'core/utils/app_strings.dart';
 import 'movies/presentation/screens/6.2 movies_screen.dart';
 
 void main() {

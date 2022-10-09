@@ -3,18 +3,14 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
-import '../../../core/utils/app_strings.dart';
-import '../controller/movie_details_bloc.dart';
-import '7.1%20dummy.dart';
-
 import 'package:shimmer/shimmer.dart';
 
 import '../../../core/ntework/api_constants.dart';
 import '../../../core/services/service_locator.dart';
+import '../../../core/utils/app_strings.dart';
 import '../../../core/utils/enums.dart';
 import '../../domain/entites/genres.dart';
-import '../../domain/entites/movie_detail.dart';
-import '../../domain/entites/recommendation.dart';
+import '../controller/movie_details_bloc.dart';
 import '../controller/movie_details_event.dart';
 import '../controller/movie_details_state.dart';
 
@@ -289,7 +285,7 @@ switch(state.movieDetailsState)
             ),
           );
         },
-        childCount: recommendationDummy.length,
+        childCount: state.movieRecommendations.length,
       ),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
         mainAxisSpacing: 8.0,

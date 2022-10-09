@@ -2,12 +2,12 @@ import 'package:animate_do/animate_do.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../controller/movies_bloc.dart';
-import '../controller/movies_state.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../../core/ntework/api_constants.dart';
 import '../../../core/utils/enums.dart';
+import '../controller/movies_bloc.dart';
+import '../controller/movies_state.dart';
 
 class TopRatedComponent extends StatelessWidget {
   const TopRatedComponent({Key? key}) : super(key: key);
